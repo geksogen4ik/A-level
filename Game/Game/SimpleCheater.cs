@@ -32,15 +32,21 @@ namespace Game
                     attempt1 = random.Next(Menu.minValue, Menu.minValue);
                 }
                 break;
-
-                if (attempt == Menu.guessedNumber)
-                {
-                    simpleCheaterWin = true;
-                }
             }
-           
 
+            if (attempt == Menu.guessedNumber)
+            {
+                simpleCheaterWin = true;
             }
         }
     }
+}
+
+
+
+
+
+
+
+
 

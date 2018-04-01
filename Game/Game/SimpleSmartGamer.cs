@@ -25,14 +25,16 @@ namespace Game
 
                 Console.WriteLine($"The Simple Smart Gamer's attempt is {attempt}");
                 break;
+            }
 
                 if (attempt == Menu.guessedNumber)
                 {
                     simpleSmartGamerWin = true;
                 }
+               
             }
             
         }
     }
-}
+
 

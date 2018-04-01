@@ -16,6 +16,7 @@ namespace Game
             while (attempt < Menu.maxValue) { 
                 attempt++;
                 Console.WriteLine($"The Diligent Gamer's attempt is {attempt}");
+                break;
 
             }
             if(attempt == Menu.guessedNumber)

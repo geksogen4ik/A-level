@@ -19,17 +19,19 @@ namespace Game
                 Random random = new Random();
                 attempt = random.Next(Menu.minValue, Menu.minValue);
                 Console.WriteLine($"The Simple Gamer's attempt is {attempt}");
+                break;
+            }
 
                 if (attempt == Menu.guessedNumber)
                 {
                     simpleGamerWin = true;
                 }
-                break;
+               
             }
 
         }
     }
-}
+
     
 
 

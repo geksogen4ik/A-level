@@ -14,24 +14,6 @@ namespace Game
             Menu.Parametrs();
             Game.GameProcess();
 
-
-            //for (int i = 0; i < Game.guessWork.Length; i++)
-            //{
-            //    Game.GameProcess();
-            //    //round++;
-            //    //Console.WriteLine($"The {round} is over");
-
-            //    if (Game.guessWork[i] == Menu.guessedNumber)
-            //    {
-            //        Console.WriteLine("The game is Completed");
-            //        break;
-            //    }
-            //    else
-            //    {
-            //        Game.GameProcess();
-            //    }
-            //}
-
         }
     }
 }
