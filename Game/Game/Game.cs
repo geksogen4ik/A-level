@@ -8,43 +8,72 @@ namespace Game
 {
     public class Game
     {
-        public static int[] guessWork = new int[Menu.maxValue - Menu.minValue];
-        public static int indx = 0;
-
-
+        //public static int[] guessWork = new int[Menu.maxValue - Menu.minValue];
+        //public static int indx;
+        public static int[] guessWork;
         public static void GameProcess()
         {
+            guessWork = new int[Menu.maxValue - Menu.minValue];
+            Console.WriteLine(guessWork.Length);
+
             DiligentGamer dg = new DiligentGamer();
             SimpleGamer sg = new SimpleGamer();
             SimpleSmartGamer ssg = new SimpleSmartGamer();
             DiligentCheater dch = new DiligentCheater();
             SimpleCheater sch = new SimpleCheater();
 
-            for(int i = 0; i < guessWork.Length; i++) { 
-            
+            for (int i = 0; i < guessWork.Length; i++)
+            {
+
                 dg.YourTurn();
-                guessWork[indx] = dg.attempt;
-                indx++;
-            
+                guessWork[i] = dg.attempt;
+
                 sg.YourTurn();
-                guessWork[indx] = sg.attempt;
-                indx++;         
-            
+                guessWork[i] = sg.attempt;
+
                 ssg.YourTurn();
-                guessWork[indx] = ssg.attempt;
-                indx++;           
-            
+                guessWork[i] = ssg.attempt;
+     
                 dch.YourTurn();
-                guessWork[indx] = dch.attempt;
-                indx++;
-           
+                guessWork[i] = dch.attempt;
+
                 sch.YourTurn();
-                guessWork[indx] = sch.attempt;
-                indx++;
-    
+                guessWork[i] = sch.attempt;
+
+                if (dg.diligentGamerWin == true)
+                {
+                    Console.WriteLine("Diligent Gamer is winner");
+                    break;
+                }
+
+                if(sg.simpleGamerWin == true)
+                {
+                    Console.WriteLine("Simple Gamer is winner");
+                    break;
+                }
+
+                if(ssg.simpleSmartGamerWin== true)
+                {
+                    Console.WriteLine("Simple Smart Gamer is winner");
+                    break;
+                }
+
+                if(dch.diligentCheaterWin == true)
+                {
+                    Console.WriteLine("Diligent Cheater is winner");
+                    break;
+                }
+                if(sch.simpleCheaterWin == true)
+                {
+                    Console.WriteLine("Simple Cheater is winner");
+                    break;
+                }
+
             }
-            
+            Console.ReadKey();
+
         }
     }
 }
+
 

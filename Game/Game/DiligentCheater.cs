@@ -10,17 +10,18 @@ namespace Game
     {
         public int attempt;
         public int attempt1 = Menu.minValue;
+        public bool diligentCheaterWin = false;
         public void YourTurn()
         {
-            for (int i = 0; i < Menu.maxValue; i++)
+            for (int i = 0; i < Game.guessWork.Length; i++)
             {
                 Random random = new Random();
 
                 attempt1++;
 
-                for(int j = 0; j < Game.guessWork.Length; j++)
+                for (int j = 0; j < Game.guessWork.Length; j++)
                 {
-                    if(attempt1 != Game.guessWork[i])
+                    if (attempt1 != Game.guessWork[j])
                     {
                         attempt = attempt1;
                         Console.WriteLine($"The Diigent Cheater Gamer's attempt is {attempt}");
@@ -29,11 +30,21 @@ namespace Game
                     {
                         attempt = attempt1++;
                     }
-                    
+                    break;
+
                 }
-                
-                
+
+                break;
             }
+                if (attempt == Menu.guessedNumber)
+                {
+                    diligentCheaterWin = true;
+                }
+            }
+
         }
     }
-}
+
+    
+
+

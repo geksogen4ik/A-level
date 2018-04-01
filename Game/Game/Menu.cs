@@ -25,7 +25,7 @@ namespace Game
                 {
                     Console.WriteLine("You should enter the numbers only");
                     Console.WriteLine("Enter max value");
-                     maxValue = Convert.ToInt32(Console.ReadLine());
+                     Int32.TryParse(Console.ReadLine(), out maxValue);
                 }
  
            
@@ -38,11 +38,9 @@ namespace Game
                 {
                     Console.WriteLine("You should enter the numbers only");
                     Console.WriteLine("Enter min value");
-                    minValue = Convert.ToInt32(Console.ReadLine());
+                    Int32.TryParse(Console.ReadLine(), out minValue);
 
-                }
-
-           
+            }
 
                 Console.WriteLine("Enter the guessed value");
                 try
@@ -53,12 +51,12 @@ namespace Game
                 {
                     Console.WriteLine("You should enter the numbers only");
                     Console.WriteLine("Enter the guessed value");
-                    guessedNumber = Convert.ToInt32(Console.ReadLine());
-                }
+                    Int32.TryParse(Console.ReadLine(), out guessedNumber);
+            }
             }
         }
 
-      }
+}
 
     
 

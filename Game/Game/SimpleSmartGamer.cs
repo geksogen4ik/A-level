@@ -10,18 +10,29 @@ namespace Game
     {
         public static int[] attempts = new int[Menu.maxValue - Menu.minValue];
         public int attempt;
-        int index = 0;
+        public bool simpleSmartGamerWin = false;
+        
         public void YourTurn()
         {
-            for(int i = 0; i < Menu.maxValue; i++)
+
+            Random random = new Random();
+            attempt = random.Next(Menu.minValue, Menu.minValue);
+
+            for (int i = 0; i < attempts.Length; i++)
             {
-                Random random = new Random();
-                attempt = random.Next(Menu.minValue, Menu.minValue);
-                attempts[index] = attempt;
-                index++;
+                attempts[i] = attempt;
+
+
                 Console.WriteLine($"The Simple Smart Gamer's attempt is {attempt}");
-                
+                break;
+
+                if (attempt == Menu.guessedNumber)
+                {
+                    simpleSmartGamerWin = true;
+                }
             }
+            
         }
     }
 }
+

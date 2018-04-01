@@ -9,15 +9,22 @@ namespace Game
     public class DiligentGamer : Gamers
     {
         public int attempt = Menu.minValue;
+        public bool diligentGamerWin = false;
         public void YourTurn()
         {
-            for (int i = 0; i < Menu.maxValue; i++)
-            {
-                attempt = attempt++;
+           
+            while (attempt < Menu.maxValue) { 
+                attempt++;
                 Console.WriteLine($"The Diligent Gamer's attempt is {attempt}");
-               
+
             }
+            if(attempt == Menu.guessedNumber)
+            {
+                diligentGamerWin = true;
+            }
+
         }
-        
+
     }
 }
+
