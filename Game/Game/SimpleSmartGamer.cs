@@ -15,8 +15,8 @@ namespace Game
         public void YourTurn()
         {
 
-            Random random = new Random();
-            attempt = random.Next(Menu.minValue, Menu.minValue);
+           
+            attempt = Game.random.Next(Menu.minValue, Menu.minValue);
 
             for (int i = 0; i < attempts.Length; i++)
             {

@@ -15,7 +15,7 @@ namespace Game
         {
             for (int i = 0; i < Game.guessWork.Length; i++)
             {
-                Random random = new Random();
+               
 
                 attempt1++;
 
@@ -30,8 +30,8 @@ namespace Game
                     {
                         attempt = attempt1++;
                     }
-                    break;
 
+                    break;
                 }
 
                 break;

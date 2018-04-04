@@ -5,3 +5,10 @@ C:\Users\User\Source\Repos\Game\Game\obj\Debug\Game.csprojResolveAssemblyReferen
 C:\Users\User\Source\Repos\Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
 C:\Users\User\Source\Repos\Game\Game\obj\Debug\Game.exe
 C:\Users\User\Source\Repos\Game\Game\obj\Debug\Game.pdb
+C:\a-level\Game\Game\bin\Debug\Game.exe.config
+C:\a-level\Game\Game\bin\Debug\Game.exe
+C:\a-level\Game\Game\bin\Debug\Game.pdb
+C:\a-level\Game\Game\obj\Debug\Game.csprojResolveAssemblyReference.cache
+C:\a-level\Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+C:\a-level\Game\Game\obj\Debug\Game.exe
+C:\a-level\Game\Game\obj\Debug\Game.pdb

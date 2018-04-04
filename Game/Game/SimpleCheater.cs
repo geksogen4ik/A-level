@@ -18,9 +18,9 @@ namespace Game
 
             for (int i = 0; i < Game.guessWork.Length; i++)
             {
-                Random random = new Random();
+               
 
-                attempt1 = random.Next(Menu.minValue, Menu.minValue);
+                attempt1 = Game.random.Next(Menu.minValue, Menu.minValue);
 
                 if (attempt1 != Game.guessWork[i])
                 {
@@ -29,7 +29,7 @@ namespace Game
                 }
                 else
                 {
-                    attempt1 = random.Next(Menu.minValue, Menu.minValue);
+                    attempt1 = Game.random.Next(Menu.minValue, Menu.minValue);
                 }
                 break;
             }

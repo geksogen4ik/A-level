@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    public class Game
+    public static class Game
     {
         //public static int[] guessWork = new int[Menu.maxValue - Menu.minValue];
         //public static int indx;
         public static int[] guessWork;
+        public static Random random = new Random();
         public static void GameProcess()
         {
             guessWork = new int[Menu.maxValue - Menu.minValue];
@@ -52,7 +53,7 @@ namespace Game
                     break;
                 }
 
-                if(ssg.simpleSmartGamerWin== true)
+                if(ssg.simpleSmartGamerWin == true)
                 {
                     Console.WriteLine("Simple Smart Gamer is winner");
                     break;
